@@ -1,0 +1,31 @@
+﻿<Window x:Class="Q1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpTest2"
+        mc:Ignorable="d"
+        Title="Q1" Height="150" Width="250">
+    <Grid>
+        <StackPanel Background="LightBlue">
+            <StackPanel Orientation="Horizontal" Margin="2">
+                <Label x:Name="lblFName" Target="{Binding ElementName=txtFName}" FontWeight="Bold" Foreground="Green" Content="First Name:"/>
+                <TextBox Name="txtFName" Width="100" ></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="2">
+                <Label x:Name="lblLName" Target="{Binding ElementName=txtFName}" FontWeight="Bold" Foreground="Green" Content="Last Name:"/>
+                <TextBox Name="txtLName" Width="100"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="2">
+                <Label x:Name="lblPhone" Target="{Binding ElementName=txtFName}" FontWeight="Bold" Foreground="Green" Content="Phone Number:" />
+                <TextBox Name="txtPhone" Width="100"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="2">
+            <Button x:Name="btnReset" Width="50">Reset</Button>
+            <Button x:Name="btnSave" Width="50">Save</Button>
+            </StackPanel>
+        </StackPanel>        
+    </Grid>
+</Window>

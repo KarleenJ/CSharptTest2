@@ -1,0 +1,21 @@
+﻿<Window x:Class="Q5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpTest2"
+        mc:Ignorable="d"
+        Title="Q5" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+        <Button x:Name ="btn" Background="Red" Foreground="White" Width="100" Height="100" Margin="348,82,345.6,238" Content= "Click!" FontWeight="Bold" FontSize="20" Click="Button_Click" />
+
+        <TreeViewItem Header="Number of Clicks">
+            <TreeViewItem></TreeViewItem>
+            <TreeViewItem></TreeViewItem>
+        </TreeViewItem>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
